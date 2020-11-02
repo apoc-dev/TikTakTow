@@ -26,7 +26,7 @@ public class TikTakTow {
     }
 
 
-    // placeTTT : calls checkStatus and return a bool
+    // placeTTT : calls isValid return true if placed
     public boolean placeTTT(int row, int col, int playerSymbol){
 
         if (isValid(row, col)){
@@ -37,7 +37,7 @@ public class TikTakTow {
         return false;
     }
 
-    // checkStatus : returns true when game finished
+    // checkWin : returns int 0, 1, 2, 3 (0=notfinished, 1=playerone, 2=playertwo, 3=tie)
     public int checkWin() {
 
         // check horizontal
